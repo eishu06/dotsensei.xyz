@@ -95,7 +95,7 @@ footer {
 body.home {
   background: 
     linear-gradient(rgba(15, 23, 42, 0.75), rgba(30, 41, 59, 0.75)),
-    url("images/dotsensei2-2.jpg") no-repeat center center/cover;
+    url("image/dotsensei2-2.jpg") no-repeat center center/cover;
   min-height: 100vh;
   color: white;
 }
