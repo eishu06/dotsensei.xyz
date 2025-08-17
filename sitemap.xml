@@ -1,1 +1,41 @@
-https://dotsensei.xyz/ 2025-08-17T10:01:58+00:00 1.00 https://dotsensei.xyz/index.html 2025-08-17T10:01:58+00:00 0.80 https://dotsensei.xyz/about.html 2025-08-17T10:01:58+00:00 0.80 https://dotsensei.xyz/why.html 2025-08-17T10:01:58+00:00 0.80 https://dotsensei.xyz/faq.html 2025-08-17T10:01:58+00:00 0.80 https://dotsensei.xyz/contactus.html 2025-08-17T10:01:58+00:00 0.80
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://dotsensei.xyz/sitemap.xml
+">
+
+  <url>
+    <loc>https://dotsensei.xyz/</loc>
+    <lastmod>2025-08-17T10:01:58+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://dotsensei.xyz/index.html</loc>
+    <lastmod>2025-08-17T10:01:58+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://dotsensei.xyz/about.html</loc>
+    <lastmod>2025-08-17T10:01:58+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://dotsensei.xyz/why.html</loc>
+    <lastmod>2025-08-17T10:01:58+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://dotsensei.xyz/faq.html</loc>
+    <lastmod>2025-08-17T10:01:58+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://dotsensei.xyz/contactus.html</loc>
+    <lastmod>2025-08-17T10:01:58+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+</urlset>
