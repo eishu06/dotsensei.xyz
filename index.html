@@ -4,114 +4,42 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>.sensei | Web3 TLD</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(to right, #0f172a, #1e293b);
-      color: white;
-      text-align: center;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-      max-width: 600px;
-    }
-
-    .search-box {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-
-    input[type="text"] {
-      padding: 12px;
-      width: 280px;
-      border: none;
-      border-radius: 6px 0 0 6px;
-      outline: none;
-      font-size: 1rem;
-    }
-
-    button {
-      padding: 12px 20px;
-      border: none;
-      background: #38bdf8;
-      color: white;
-      font-size: 1rem;
-      border-radius: 0 6px 6px 0;
-      cursor: pointer;
-      transition: 0.3s ease;
-    }
-
-    button:hover {
-      background: #0284c7;
-    }
-
-    .cta {
-      margin-top: 20px;
-    }
-
-    .cta a {
-      display: inline-block;
-      padding: 14px 28px;
-      background: #22c55e;
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
-
-    .cta a:hover {
-      background: #15803d;
-    }
-
-    footer {
-      margin-top: 50px;
-      font-size: 0.9rem;
-      opacity: 0.7;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>.sensei</h1>
-  <p>The Web3 TLD for knowledge, wisdom, and innovation. <br>
-     Educate. Empower. Build your brand on the blockchain with <strong>.sensei</strong>.
-  </p>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">.sensei</a>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="why.html">Why .sensei?</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="search-box">
-    <input type="text" placeholder="Search yourname.sensei" />
-    <button onclick="mintDomain()">Search</button>
-  </div>
+  <main>
+    <h1>Own Your Knowledge Identity with .sensei</h1>
+    <p>The Web3 TLD for wisdom, knowledge, and innovation.  
+       Build your digital presence with <strong>.sensei</strong>.
+    </p>
 
-  <div class="cta">
-    <a href="https://www.freename.io/discover/sensei" target="_blank">
-      🚀 Mint Your .sensei Domain
-    </a>
-  </div>
+    <div class="search-box">
+      <input type="text" placeholder="Search yourname.sensei" />
+      <button onclick="mintDomain()">Search</button>
+    </div>
+
+    <div class="cta">
+      <a href="https://www.freename.io/discover/sensei" target="_blank">
+        🚀 Mint Your .SENSEI Domain
+      </a>
+    </div>
+  </main>
 
   <footer>
     © 2025 .sensei — A Web3 Top Level Domain. Powered by Freename.io
   </footer>
 
-  <script>
-    function mintDomain() {
-      // Just redirect user to freename.io discover page
-      window.open("https://www.freename.io/discover/sensei", "_blank");
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
