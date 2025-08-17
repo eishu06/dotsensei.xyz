@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Why .SENSEI Domains are the Future</title>
-  <link rel="stylesheet" href="../blog.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to .SENSEI | Blog</title>
+  <link rel="stylesheet" href="../style.css">   <!-- main site styles -->
+  <link rel="stylesheet" href="../blog.css">    <!-- blog-specific styles -->
 </head>
-<body>
+<body class="home"> <!-- ensures same background -->
+
   <header>
     <nav>
       <a href="../index.html" class="logo">.SENSEI</a>
@@ -13,27 +16,40 @@
         <li><a href="../about.html">About</a></li>
         <li><a href="../why.html">Why .Sensei</a></li>
         <li><a href="../faq.html">FAQ's</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
         <li><a href="../contactus.html">Contact Us</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="blog-container">
-    <h1>Why .SENSEI Domains are the Future</h1>
-    <img src="../images/blog1.jpg" alt="Blog Post Image" style="max-width:100%; border-radius:10px;">
-    <p>
-      Web3 is redefining how we think about identity and ownership online.
-      With .SENSEI domains, individuals and organizations can establish...
-    </p>
-    <p>
-      (Continue your blog content here...)
-    </p>
-    <a href="blog.html">← Back to Blog</a>
+  <main class="blog-article">
+    <article>
+      <h1>Introduction to .SENSEI</h1>
+      <p class="blog-meta">Published on August 17, 2025 • By .SENSEI Team</p>
+
+      <img src="../images/blog1.jpg" alt="Introduction to .SENSEI" class="blog-hero">
+
+      <p>The <strong>.SENSEI</strong> TLD represents mastery, guidance, and authority online. It allows professionals, educators, and creators to highlight their expertise in a crowded digital space.</p>
+
+      <h2>Why Choose .SENSEI?</h2>
+      <p>It communicates authority and credibility, instantly signaling to your audience that you are an expert in your field.</p>
+
+      <h2>Who is it For?</h2>
+      <ul>
+        <li>Educators and mentors</li>
+        <li>Experts and professionals</li>
+        <li>Creators and community leaders</li>
+      </ul>
+
+      <div class="cta-container">
+        <a href="blog.html" class="cta">← Back to Blog</a>
+      </div>
+    </article>
   </main>
 
   <footer>
     © 2025 .sensei — A Web 3 Top Level Domain. Powered by Freename.io
   </footer>
+
 </body>
 </html>
