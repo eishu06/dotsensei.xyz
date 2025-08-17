@@ -1,112 +1,76 @@
-/* ===== Blog Listing (cards) ===== */
-.page-title {
-  text-align: center;
-  margin-top: 2rem;
-  font-size: 2rem;
+/* Blog Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
 }
 
-.page-subtitle {
-  text-align: center;
-  color: #666;
-  margin-bottom: 1rem;
+header {
+  background: #222;
+  color: white;
+  padding: 1rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
 }
 
 .blog-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.blog-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.blog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  padding: 2rem;
 }
 
 .blog-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.blog-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  padding: 1rem;
+  text-align: center;
 }
 
 .blog-card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
-}
-
-.blog-content {
-  padding: 1rem 1rem 1.25rem;
-}
-
-.blog-content h2 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: #222;
-}
-
-.blog-content p {
-  font-size: 0.95rem;
-  color: #555;
-  margin-bottom: 1rem;
-}
-
-.blog-content a {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background: #4f46e5;
-  color: #fff;
   border-radius: 8px;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: background 0.25s ease;
 }
 
-.blog-content a:hover {
-  background: #3730a3;
-}
-
-/* ===== Single Blog Article ===== */
-.blog-article {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-  line-height: 1.7;
-}
-
-.blog-article h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.blog-meta {
-  color: gray;
-  font-size: 0.9rem;
-  margin-bottom: 1.5rem;
-}
-
-.blog-hero {
-  width: 100%;
-  border-radius: 10px;
+.blog-card h2 {
   margin: 1rem 0;
 }
 
-.blog-article h2 {
-  margin-top: 1.5rem;
-}
-
-.back-to-blog {
-  margin-top: 2rem;
-}
-
-.back-to-blog a {
+.read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #222;
+  color: white;
   text-decoration: none;
-  color: #0077cc;
-  font-weight: bold;
+  border-radius: 4px;
+  transition: background 0.3s ease;
 }
 
-.back-to-blog a:hover {
-  text-decoration: underline;
+.read-more:hover {
+  background: #444;
 }
