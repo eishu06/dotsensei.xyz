@@ -114,9 +114,11 @@ footer {
   padding-left: 20px;
 }
 
-/* Background only for homepage */
+/* Homepage background with gradient overlay */
 body.home {
-  background: url("images/bg.jpg") no-repeat center center/cover;
+  background: 
+    linear-gradient(rgba(15, 23, 42, 0.75), rgba(30, 41, 59, 0.75)),
+    url("images/sensei-bg.jpg") no-repeat center center/cover;
   min-height: 100vh;
   color: white;
 }
