@@ -113,3 +113,10 @@ footer {
   margin: 20px auto;
   padding-left: 20px;
 }
+
+/* Background only for homepage */
+body.home {
+  background: url("images/bg.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+  color: white;
+}
