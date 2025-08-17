@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>.SENSEI | Blog</title>
+  <!-- Include main site styles first -->
+  <link rel="stylesheet" href="../style.css">
+  <!-- Blog-specific styles -->
   <link rel="stylesheet" href="../blog.css">
 </head>
-<body>
+<body class="home"> <!-- same body class for consistent background -->
+
   <header>
     <nav>
       <a href="../index.html" class="logo">.SENSEI</a>
@@ -14,7 +18,7 @@
         <li><a href="../about.html">About</a></li>
         <li><a href="../why.html">Why .Sensei</a></li>
         <li><a href="../faq.html">FAQ's</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
         <li><a href="../contactus.html">Contact Us</a></li>
       </ul>
     </nav>
@@ -23,20 +27,23 @@
   <main>
     <section class="blog-container">
       <h1>Our Blog</h1>
+      <p class="page-subtitle">Latest posts and updates from .SENSEI.</p>
 
       <div class="blog-grid">
+        <!-- Blog card 1 -->
         <article class="blog-card">
           <img src="../images/blog1.jpg" alt="Blog Post 1">
-          <h2>First Blog Post</h2>
-          <p>This is a short description of the first blog post...</p>
-          <a href="post1.html" class="read-more">Read More</a>
+          <h2>Introduction to .SENSEI</h2>
+          <p>Discover how the .SENSEI domain represents mastery, guidance, and authority online.</p>
+          <a href="post1.html" class="cta">Read More</a>
         </article>
 
+        <!-- Blog card 2 -->
         <article class="blog-card">
           <img src="../images/blog2.jpg" alt="Blog Post 2">
-          <h2>Second Blog Post</h2>
-          <p>This is a short description of the second blog post...</p>
-          <a href="post2.html" class="read-more">Read More</a>
+          <h2>Why Web3 Domains Are the Future</h2>
+          <p>Learn why decentralized domains are changing ownership and identity on the web.</p>
+          <a href="post2.html" class="cta">Read More</a>
         </article>
       </div>
     </section>
@@ -45,5 +52,6 @@
   <footer>
     © 2025 .sensei — A Web 3 Top Level Domain. Powered by Freename.io
   </footer>
+
 </body>
 </html>
