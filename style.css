@@ -144,40 +144,50 @@ button[type="submit"]:hover {
   background: #06b6d4;
 }
 
-/* Coupon Carousel */
+/* Coupon Ticker (Stock-style) */
 .coupon-carousel {
   width: 100%;
-  background: #222;
-  color: #fff;
+  background: #111; /* dark base like stock tickers */
   overflow: hidden;
   white-space: nowrap;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 9999;
-  padding: 10px 0;
+  padding: 8px 0;
   font-size: 16px;
+  font-family: Arial, sans-serif;
 }
 
 .coupon-track {
   display: inline-block;
   padding-left: 100%;
-  animation: scroll-left 15s linear infinite;
+  animation: scroll-left 20s linear infinite;
 }
 
 .coupon-track span {
   display: inline-block;
-  margin: 0 50px;
+  padding: 6px 15px;
+  margin: 0 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #fff;
 }
 
+/* 🎨 Different background colors for ticker messages */
+.msg.red { background: #e63946; }     /* Red */
+.msg.green { background: #2a9d8f; }  /* Green */
+.msg.blue { background: #457b9d; }   /* Blue */
+.msg.purple { background: #9d4edd; } /* Purple */
+
 @keyframes scroll-left {
-  0% { transform: translateX(0); }
+  0%   { transform: translateX(0); }
   100% { transform: translateX(-100%); }
 }
 
-/* Adjust body so header isn’t hidden under fixed coupon bar */
+/* Push page content down so ticker doesn’t overlap */
 body {
   margin: 0;
-  padding-top: 50px; /* shift down content */
-  font-family: Arial, sans-serif;
+  padding-top: 55px; /* Adjust for bar height */
 }
+
