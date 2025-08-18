@@ -54,3 +54,11 @@
 .blog-card .cta:hover {
   background: #3730a3;
 }
+
+.responsive-img {
+  width: 100%;      /* image takes full width of container */
+  height: auto;     /* maintains aspect ratio */
+  max-width: 100%;  /* prevents overflowing container */
+  display: block;   /* removes extra whitespace below image */
+  border-radius: 12px; /* optional, matches your design */
+}
