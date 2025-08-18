@@ -162,11 +162,12 @@ button[type="submit"]:hover {
 .coupon-track {
   display: inline-block;
   padding-left: 100%;
-  animation: scroll-left 40s linear infinite; /*  Slower speed (40s instead of 20s) */
+  animation: scroll-left 40s linear infinite; /* Slower speed */
 }
 
+/* ✅ Pause the track when user hovers anywhere on the bar */
 .coupon-carousel:hover .coupon-track {
-  animation-play-state: paused; /*  Pause on hover */
+  animation-play-state: paused;
 }
 
 .coupon-track span {
@@ -176,22 +177,22 @@ button[type="submit"]:hover {
   border-radius: 6px;
   font-weight: bold;
   color: #fff;
+  cursor: pointer; /* shows it’s interactive */
 }
 
-/* 🎨 Different background colors for ticker messages */
-.msg.red { background: #e63946; }     /* Red */
-.msg.green { background: #2a9d8f; }  /* Green */
-.msg.blue { background: #457b9d; }   /* Blue */
-.msg.purple { background: #9d4edd; } /* Purple */
+/* 🎨 Colors */
+.msg.red { background: #e63946; }
+.msg.green { background: #2a9d8f; }
+.msg.blue { background: #457b9d; }
+.msg.purple { background: #9d4edd; }
 
 @keyframes scroll-left {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-100%); }
 }
 
-/* Push page content down so ticker doesn’t overlap */
+/* Push content down */
 body {
   margin: 0;
-  padding-top: 55px; /* Adjust for bar height */
+  padding-top: 55px;
 }
-
