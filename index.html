@@ -153,5 +153,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </footer>
 
   <script src="script.js"></script>
+
+<script>
+window.addEventListener('scroll', function() {
+  const header = document.querySelector('header');
+  if(window.scrollY > 50) {   // adjust threshold as needed
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+</script>
+
+  
 </body>
 </html>
