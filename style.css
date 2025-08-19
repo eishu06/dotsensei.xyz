@@ -198,6 +198,49 @@ body {
   padding-top: 55px;
 }
 
+/* Thumbnail section styles */
+.domain-thumbnails {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #fdfdfd; /* fallback if image doesn't load */
+
+  /* Add single background image */
+  background-image: url('background.jpg'); /* replace with your image path */
+  background-size: cover;       /* cover entire section */
+  background-position: center;  /* center the image */
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+}
+
+/* Optional: add overlay so text stands out */
+.domain-thumbnails::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(255, 255, 255, 0.7); /* semi-transparent white overlay */
+  z-index: -1; /* behind content */
+}
+
+.domain-thumbnails h1 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #000;
+  position: relative;
+  z-index: 1; /* above overlay */
+}
+
+/* Container for flex layout */
+.thumbnails-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  position: relative;
+  z-index: 1; /* above overlay */
+}
+
 /* Individual thumbnail styles */
 .thumbnail {
   background-color: #ffffff;
@@ -214,16 +257,9 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  text-decoration: none; 
-  transition: transform 0.2s, box-shadow 0.2s, font-weight 0.2s, background 0.3s, color 0.2s;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s, font-weight 0.2s;
   word-break: normal;
-
-  /* Add background image */
-  background-image: url('images/thumbnail-bg.jpg'); /* replace with your image path */
-  background-size: cover;       /* make sure the image covers the whole thumbnail */
-  background-position: center;  /* center the image */
-  background-repeat: no-repeat;
-  color: #fff;                  /* change text to white for readability */
 }
 
 /* Hover effect */
@@ -231,8 +267,15 @@ body {
   transform: translateY(-3px);
   box-shadow: 0 5px 12px rgba(0,0,0,0.2);
   font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.5); /* optional: dark overlay on hover */
-  color: #38bdf8;
-  filter: brightness(1.1); /* slightly brighten image on hover */
+}
+
+/* Responsive for mobile */
+@media (max-width: 500px) {
+  .thumbnail {
+    min-width: 90px;
+    max-width: 150px;
+    height: 55px;
+    font-size: 14px;
+  }
 }
 
