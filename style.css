@@ -205,7 +205,7 @@ body {
   background-color: #fdfdfd; /* fallback if image doesn't load */
 
   /* Add single background image */
-  background-image: url('background.jpg'); /* replace with your image path */
+  background-image: url('images/thumbnail-bg.jpg'); /* replace with your image path */
   background-size: cover;       /* cover entire section */
   background-position: center;  /* center the image */
   background-repeat: no-repeat;
