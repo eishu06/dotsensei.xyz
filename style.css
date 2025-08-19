@@ -68,6 +68,12 @@ h1 {
   color: #111;
 }
 
+/* Ensure content doesn’t go under fixed header */
+main,
+.domain-thumbnails {
+  padding-top: 120px; /* coupon bar + header height */
+}
+
 /* ===== CTA Buttons ===== */
 .cta a {
   display: inline-block;
