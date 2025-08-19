@@ -262,6 +262,14 @@ body {
   word-break: normal;
 }
 
+/* Subtitle text */
+.subtitle {
+  margin-top: 6px;          /* space between thumbnail and subtitle */
+  font-size: 12px;           /* smaller than thumbnail text */
+  color: #555;               /* subtle gray */
+  text-align: center;
+}
+
 /* Hover effect */
 .thumbnail:hover {
   transform: translateY(-3px);
