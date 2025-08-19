@@ -1,8 +1,8 @@
 /* ===== Global Body ===== */
 body {
   margin: 0;
-  padding-top: 55px; /* push content below fixed coupon bar */
-  font-family: Arial, sans-serif; /* you can change this to any clean font */
+  padding-top: 120px; /* push content below coupon bar + header */
+  font-family: Arial, sans-serif; /* clean font */
   min-height: 100vh;
   color: #111; /* dark text for light background */
   text-align: center;
@@ -18,17 +18,30 @@ body {
 
 /* ===== Header ===== */
 header {
-  background: rgba(255,255,255,0.85); /* light semi-transparent header */
+  position: fixed;      /* make header fixed */
+  top: 55px;            /* below coupon ticker */
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255,255,255,0.95);
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+header.scrolled {
+  padding: 10px 30px; /* shrink header on scroll */
+  background: rgba(255,255,255,0.98);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 header .logo {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #38bdf8; /* keep logo colorful */
+  color: #38bdf8;
   text-decoration: none;
 }
 
@@ -41,7 +54,7 @@ nav ul {
 }
 
 nav ul li a {
-  color: #111; /* dark links for visibility */
+  color: #111;
   text-decoration: none;
   font-weight: 500;
   transition: 0.3s;
@@ -49,6 +62,38 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #38bdf8;
+}
+
+/* ===== Mobile Menu Fix ===== */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;   /* vertical menu on mobile */
+    gap: 10px;
+    position: fixed;
+    top: 120px;               /* below coupon + header */
+    right: -220px;            /* hidden by default */
+    width: 200px;
+    background: rgba(255,255,255,0.95);
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: right 0.3s ease;
+  }
+
+  nav ul.active {
+    right: 0;                 /* slide in when active */
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  /* Optional hamburger button */
+  .menu-toggle {
+    display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #111;
+  }
 }
 
 /* ===== Main Section ===== */
@@ -64,7 +109,7 @@ main {
 h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #111; /* ensure heading is dark */
+  color: #111;
 }
 
 /* ===== CTA Buttons ===== */
@@ -95,7 +140,7 @@ footer {
 /* ===== Coupon Ticker ===== */
 .coupon-carousel {
   width: 100%;
-  background: #f5f5f5; /* light background */
+  background: #f5f5f5;
   overflow: hidden;
   white-space: nowrap;
   position: fixed;
@@ -149,7 +194,7 @@ footer {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(255,255,255,0.7);
+  background: rgba(255, 255, 255,0.7);
   z-index: -1;
 }
 
@@ -212,7 +257,7 @@ footer {
   font-weight: bold;
 }
 
-/* ===== Responsive ===== */
+/* ===== Responsive Thumbnails ===== */
 @media (max-width: 500px) {
   .thumbnail {
     min-width: 90px;
@@ -222,13 +267,4 @@ footer {
   .thumbnail .title { font-size: 14px; }
   .thumbnail .subtitle { font-size: 11px; }
   .thumbnail .price { font-size: 12px; }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  nav ul li a {
-    font-size: 14px;
-  }
 }
