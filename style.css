@@ -336,3 +336,64 @@ body {
     font-size: 11px;
   }
 }
+.thumbnail {
+  display: flex;
+  flex-direction: column; /* stack title, subtitle, price */
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  max-width: 200px;
+  height: 100px; /* increased height to fit price */
+  padding: 14px 18px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s, font-weight 0.2s;
+  position: relative;
+}
+
+.thumbnail .title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+.thumbnail .subtitle {
+  font-size: 12px;
+  color: #555;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.thumbnail .price {
+  font-size: 14px;
+  font-weight: bold;
+  color: #1a73e8; /* blue for price */
+  margin-top: 6px;
+}
+
+/* Hover effect */
+.thumbnail:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+  font-weight: bold;
+}
+
+/* Responsive for mobile */
+@media (max-width: 500px) {
+  .thumbnail {
+    min-width: 90px;
+    max-width: 150px;
+    height: 90px;
+  }
+  .thumbnail .title {
+    font-size: 14px;
+  }
+  .thumbnail .subtitle {
+    font-size: 11px;
+  }
+  .thumbnail .price {
+    font-size: 12px;
+  }
+}
