@@ -135,6 +135,14 @@ footer {
 }
 
 /* Thumbnail section */
+.domain-thumbnails h1 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #000;
+  position: relative;
+  z-index: 1;
+}
+
 .domain-thumbnails {
   padding: 50px 20px;
   text-align: center;
@@ -147,17 +155,14 @@ footer {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.2);
   z-index: -1;
 }
 
-.domain-thumbnails h1 {
-  margin-bottom: 25px;
-  font-size: 28px;
-  color: #000;
-  position: relative;
-  z-index: 1;
-}
+
+
+
+
 
 .thumbnails-container {
   display: flex;
