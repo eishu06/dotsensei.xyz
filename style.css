@@ -2,14 +2,14 @@
 body {
   margin: 0;
   padding-top: 55px; /* push content below fixed coupon bar */
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif; /* you can change this to any clean font */
   min-height: 100vh;
-  color: #111;
+  color: #111; /* dark text for light background */
   text-align: center;
   display: flex;
   flex-direction: column;
 
-  /* Background with overlay */
+  /* Light white background with optional image overlay */
   background: 
     linear-gradient(rgba(255,255,255,0.95), rgba(245,245,245,0.95)),
     url("image/dotsensei2-2.jpg") no-repeat center center/cover;
@@ -18,35 +18,30 @@ body {
 
 /* ===== Header ===== */
 header {
-  background: rgba(255,255,255,0.85);
+  background: rgba(255,255,255,0.85); /* light semi-transparent header */
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 35px; /* below coupon ticker */
-  left: 0;
-  width: 100%;
-  z-index: 1001;
 }
 
 header .logo {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #38bdf8;
+  color: #38bdf8; /* keep logo colorful */
   text-decoration: none;
 }
 
 nav ul {
+  list-style: none;
   display: flex;
   gap: 20px;
-  list-style: none;
   margin: 0;
   padding: 0;
 }
 
 nav ul li a {
-  color: #111;
+  color: #111; /* dark links for visibility */
   text-decoration: none;
   font-weight: 500;
   transition: 0.3s;
@@ -54,46 +49,6 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #38bdf8;
-}
-
-/* ===== Hamburger Menu ===== */
-.menu-toggle {
-  font-size: 28px;
-  cursor: pointer;
-  display: none; /* hidden on desktop */
-  position: absolute;
-  left: 15px;
-  top: 20px;
-  z-index: 2000;
-  color: #000;
-}
-
-/* ===== Mobile Menu ===== */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block; /* show on mobile */
-  }
-
-  nav ul {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    background: rgba(255,255,255,0.95);
-    position: absolute;
-    top: 60px;
-    right: 30px;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-  }
-
-  nav ul.active {
-    display: flex;
-  }
-
-  header .logo {
-    margin-left: 60px; /* keep logo centered */
-  }
 }
 
 /* ===== Main Section ===== */
@@ -109,7 +64,7 @@ main {
 h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #111;
+  color: #111; /* ensure heading is dark */
 }
 
 /* ===== CTA Buttons ===== */
@@ -140,7 +95,7 @@ footer {
 /* ===== Coupon Ticker ===== */
 .coupon-carousel {
   width: 100%;
-  background: #f5f5f5;
+  background: #f5f5f5; /* light background */
   overflow: hidden;
   white-space: nowrap;
   position: fixed;
@@ -267,4 +222,13 @@ footer {
   .thumbnail .title { font-size: 14px; }
   .thumbnail .subtitle { font-size: 11px; }
   .thumbnail .price { font-size: 12px; }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
 }
