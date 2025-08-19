@@ -281,3 +281,13 @@ nav ul {
     display: block;
   }
 }
+.menu-toggle {
+  font-size: 28px;         /* bigger icon */
+  cursor: pointer;
+  display: none;           /* stays hidden on desktop */
+  position: absolute;      /* take control of position */
+  left: 15px;              /* push to left corner */
+  top: 20px;               /* adjust vertical placement */
+  z-index: 1000;           /* ensure it stays above other elements */
+}
+
