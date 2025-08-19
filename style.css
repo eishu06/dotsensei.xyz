@@ -1,14 +1,22 @@
+/* Global body */
 body {
   margin: 0;
+  padding-top: 55px; /* push content below fixed coupon bar */
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #0f172a, #1e293b);
+  min-height: 100vh;
   color: white;
   text-align: center;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+
+  /* Smooth gradient with background image overlay */
+  background: 
+    linear-gradient(rgba(15, 23, 42, 0.75), rgba(30, 41, 59, 0.75)),
+    url("image/dotsensei2-2.jpg") no-repeat center center/cover;
+  background-attachment: fixed; /* parallax effect */
 }
 
+/* Header */
 header {
   background: rgba(0,0,0,0.4);
   padding: 15px 30px;
@@ -43,6 +51,7 @@ nav ul li a:hover {
   color: #38bdf8;
 }
 
+/* Main section */
 main {
   flex: 1;
   display: flex;
@@ -57,12 +66,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-
-.search-box {
-  display: flex;
-  margin-top: 20px;
-}
-
+/* CTA Buttons */
 .cta a {
   display: inline-block;
   margin-top: 20px;
@@ -79,76 +83,17 @@ h1 {
   background: #0479d9;
 }
 
+/* Footer */
 footer {
   padding: 20px;
   font-size: 0.9rem;
   opacity: 0.7;
 }
 
-.benefits {
-  text-align: left;
-  max-width: 500px;
-  margin: 20px auto;
-  padding-left: 20px;
-}
-
-/* Homepage background with gradient overlay */
-body {
-  background: 
-    linear-gradient(rgba(15, 23, 42, 0.75), rgba(30, 41, 59, 0.75)),
-    url("image/dotsensei2-2.jpg") no-repeat center center/cover;
-  min-height: 100vh;
-  color: white;
-   margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif; /* keep global font consistent */
-}
-
-.contact-form {
-  max-width: 500px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-}
-
-.form-group {
-  margin-bottom: 1rem;
-  text-align: left;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: bold;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 0.75rem;
-  border-radius: 8px;
-  border: none;
-  font-size: 1rem;
-}
-
-button[type="submit"] {
-  background: #22d3ee;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-button[type="submit"]:hover {
-  background: #06b6d4;
-}
-
-/* Coupon Ticker (Stock-style) */
+/* Coupon Ticker */
 .coupon-carousel {
   width: 100%;
-  background: #111; /* dark base like stock tickers */
+  background: #111;
   overflow: hidden;
   white-space: nowrap;
   position: fixed;
@@ -157,16 +102,14 @@ button[type="submit"]:hover {
   z-index: 9999;
   padding: 8px 0;
   font-size: 16px;
-  font-family: Arial, sans-serif;
 }
 
 .coupon-track {
   display: inline-block;
   padding-left: 100%;
-  animation: scroll-left 40s linear infinite; /* Slower speed */
+  animation: scroll-left 40s linear infinite;
 }
 
-/* ✅ Pause the track when user hovers anywhere on the bar */
 .coupon-carousel:hover .coupon-track {
   animation-play-state: paused;
 }
@@ -178,10 +121,9 @@ button[type="submit"]:hover {
   border-radius: 6px;
   font-weight: bold;
   color: #fff;
-  cursor: pointer; /* shows it’s interactive */
+  cursor: pointer;
 }
 
-/* 🎨 Colors */
 .msg.red { background: #e63946; }
 .msg.green { background: #2a9d8f; }
 .msg.blue { background: #457b9d; }
@@ -192,35 +134,21 @@ button[type="submit"]:hover {
   100% { transform: translateX(-100%); }
 }
 
-/* Push content down */
-body {
-  margin: 0;
-  padding-top: 55px;
-}
-
-/* Thumbnail section styles */
+/* Thumbnail section */
 .domain-thumbnails {
   padding: 50px 20px;
   text-align: center;
-  background-color: #fdfdfd; /* fallback if image doesn't load */
-
-  /* Add single background image */
-  background-image: url('images/thumbnail-bg.jpg'); /* replace with your image path */
-  background-size: cover;       /* cover entire section */
-  background-position: center;  /* center the image */
-  background-repeat: no-repeat;
+  background: url('images/thumbnail-bg.jpg') center/cover no-repeat;
   position: relative;
-  z-index: 0;
 }
 
-/* Optional: add overlay so text stands out */
 .domain-thumbnails::before {
   content: '';
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(255, 255, 255, 0.7); /* semi-transparent white overlay */
-  z-index: -1; /* behind content */
+  background: rgba(255, 255, 255, 0.7);
+  z-index: -1;
 }
 
 .domain-thumbnails h1 {
@@ -228,172 +156,69 @@ body {
   font-size: 28px;
   color: #000;
   position: relative;
-  z-index: 1; /* above overlay */
+  z-index: 1;
 }
 
-/* Container for flex layout */
 .thumbnails-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 15px;
   position: relative;
-  z-index: 1; /* above overlay */
+  z-index: 1;
 }
 
-/* Individual thumbnail styles */
+/* Thumbnails */
 .thumbnail {
-  background-color: #ffffff;
-  color: #000;
-  padding: 14px 18px;
-  border-radius: 10px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-  text-align: center;
-  font-size: 18px;
-  min-width: 120px;
-  max-width: 200px;
-  height: 70px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  text-decoration: none;
-  transition: transform 0.2s, box-shadow 0.2s, font-weight 0.2s;
-  word-break: normal;
-}
-
-/* Hover effect */
-.thumbnail:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 12px rgba(0,0,0,0.2);
-  font-weight: bold;
-}
-
-/* Responsive for mobile */
-@media (max-width: 500px) {
-  .thumbnail {
-    min-width: 90px;
-    max-width: 150px;
-    height: 55px;
-    font-size: 14px;
-  }
-}
-
-/* Make thumbnails vertical flex containers */
-.thumbnail {
-  background-color: #ffffff;
-  color: #000;
-  padding: 14px 18px;
-  border-radius: 10px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column; /* stack title & subtitle vertically */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   min-width: 120px;
   max-width: 200px;
-  height: 90px; /* increase height for subtitle */
-  text-decoration: none;
-  transition: transform 0.2s, box-shadow 0.2s, font-weight 0.2s;
-  position: relative;
-}
-
-/* Title text */
-.thumbnail .title {
-  font-size: 18px;
-  font-weight: bold;
-  color: #000;
-}
-
-/* Subtitle text inside thumbnail */
-.thumbnail .subtitle {
-  margin-top: 4px;
-  font-size: 13px;
-  color: #555;
-  text-align: center;
-}
-
-/* Hover effect */
-.thumbnail:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 12px rgba(0,0,0,0.2);
-  font-weight: bold;
-}
-
-/* Responsive for mobile */
-@media (max-width: 500px) {
-  .thumbnail {
-    min-width: 90px;
-    max-width: 150px;
-    height: 80px;
-  }
-
-  .thumbnail .title {
-    font-size: 14px;
-  }
-
-  .thumbnail .subtitle {
-    font-size: 11px;
-  }
-}
-.thumbnail {
-  display: flex;
-  flex-direction: column; /* stack title, subtitle, price */
-  align-items: center;
-  justify-content: center;
-  min-width: 120px;
-  max-width: 200px;
-  height: 100px; /* increased height to fit price */
+  height: 100px;
   padding: 14px 18px;
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
   text-decoration: none;
+  color: #000;
   transition: transform 0.2s, box-shadow 0.2s, font-weight 0.2s;
-  position: relative;
 }
 
 .thumbnail .title {
   font-size: 16px;
   font-weight: bold;
-  color: #000;
 }
 
 .thumbnail .subtitle {
+  margin-top: 4px;
   font-size: 12px;
   color: #555;
-  margin-top: 4px;
   text-align: center;
 }
 
 .thumbnail .price {
+  margin-top: 6px;
   font-size: 14px;
   font-weight: bold;
-  color: #1a73e8; /* blue for price */
-  margin-top: 6px;
+  color: #1a73e8;
 }
 
-/* Hover effect */
 .thumbnail:hover {
   transform: translateY(-3px);
   box-shadow: 0 5px 12px rgba(0,0,0,0.2);
   font-weight: bold;
 }
 
-/* Responsive for mobile */
+/* Responsive */
 @media (max-width: 500px) {
   .thumbnail {
     min-width: 90px;
     max-width: 150px;
     height: 90px;
   }
-  .thumbnail .title {
-    font-size: 14px;
-  }
-  .thumbnail .subtitle {
-    font-size: 11px;
-  }
-  .thumbnail .price {
-    font-size: 12px;
-  }
+  .thumbnail .title { font-size: 14px; }
+  .thumbnail .subtitle { font-size: 11px; }
+  .thumbnail .price { font-size: 12px; }
 }
