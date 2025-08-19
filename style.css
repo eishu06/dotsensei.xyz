@@ -198,63 +198,41 @@ body {
   padding-top: 55px;
 }
 
-/* Thumbnail section styles */
-.domain-thumbnails {
-  padding: 50px 20px;
-  text-align: center;
-  background-color: #fdfdfd; /* light white background */
-}
-
-.domain-thumbnails h1 {
-  margin-bottom: 25px;
-  font-size: 28px; /* increased heading font size */
-  color: #000;
-}
-
-/* Container for flex layout */
-.thumbnails-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
 /* Individual thumbnail styles */
 .thumbnail {
   background-color: #ffffff;
   color: #000;
-  padding: 14px 18px;      /* slightly more padding */
+  padding: 14px 18px;
   border-radius: 10px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
   text-align: center;
-  font-size: 18px;          /* increased font size */
-  min-width: 120px;         /* adjust width for larger text */
+  font-size: 16px;
+  min-width: 120px;
   max-width: 200px;
-  height: 70px;             /* taller for bigger text */
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   text-decoration: none; 
-  transition: transform 0.2s, box-shadow 0.2s, font-weight 0.2s, background-color 0.2s, color 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s, font-weight 0.2s, background 0.3s, color 0.2s;
   word-break: normal;
+
+  /* Add background image */
+  background-image: url('thumbnail-bg.jpg'); /* replace with your image path */
+  background-size: cover;       /* make sure the image covers the whole thumbnail */
+  background-position: center;  /* center the image */
+  background-repeat: no-repeat;
+  color: #fff;                  /* change text to white for readability */
 }
 
 /* Hover effect */
 .thumbnail:hover {
   transform: translateY(-3px);
   box-shadow: 0 5px 12px rgba(0,0,0,0.2);
-  font-weight: bold;      
-  background-color: #38bdf8;  /* new hover background color */
-  color: #fff;             /* text changes to white on hover */
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5); /* optional: dark overlay on hover */
+  color: #38bdf8;
+  filter: brightness(1.1); /* slightly brighten image on hover */
 }
 
-/* Responsive for mobile */
-@media (max-width: 500px) {
-  .thumbnail {
-    min-width: 90px;
-    max-width: 150px;
-    height: 55px;
-    font-size: 14px;
-  }
-}
