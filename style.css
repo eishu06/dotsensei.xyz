@@ -268,9 +268,16 @@ nav ul {
 
 /* Hamburger toggle button hidden on desktop */
 .menu-toggle {
-  display: none;
-  font-size: 2rem;
+  
+.menu-toggle {
+  font-size: 28px;          /* bigger size */
   cursor: pointer;
+  display: block;           /* make sure it's always visible */
+  position: absolute;
+  left: 15px;               /* stick to left corner */
+  top: 20px;                /* push down a bit */
+  z-index: 2000;            /* keep above everything */
+  color: #000;              /* make it black (change if background is dark) */
 }
 
 /* Mobile menu */
@@ -287,6 +294,12 @@ nav ul {
     border-radius: 8px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.2);
   }
+
+  @media (min-width: 769px) {
+  .menu-toggle {
+    display: none;   /* hide on desktop */
+  }
+}
 
   nav ul.active {
     display: flex;
