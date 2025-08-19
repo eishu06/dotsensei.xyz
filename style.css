@@ -262,14 +262,6 @@ body {
   word-break: normal;
 }
 
-/* Subtitle text */
-.subtitle {
-  margin-top: 6px;          /* space between thumbnail and subtitle */
-  font-size: 12px;           /* smaller than thumbnail text */
-  color: #555;               /* subtle gray */
-  text-align: center;
-}
-
 /* Hover effect */
 .thumbnail:hover {
   transform: translateY(-3px);
@@ -287,3 +279,60 @@ body {
   }
 }
 
+/* Make thumbnails vertical flex containers */
+.thumbnail {
+  background-color: #ffffff;
+  color: #000;
+  padding: 14px 18px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column; /* stack title & subtitle vertically */
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  max-width: 200px;
+  height: 90px; /* increase height for subtitle */
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s, font-weight 0.2s;
+  position: relative;
+}
+
+/* Title text */
+.thumbnail .title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Subtitle text inside thumbnail */
+.thumbnail .subtitle {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #555;
+  text-align: center;
+}
+
+/* Hover effect */
+.thumbnail:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+  font-weight: bold;
+}
+
+/* Responsive for mobile */
+@media (max-width: 500px) {
+  .thumbnail {
+    min-width: 90px;
+    max-width: 150px;
+    height: 80px;
+  }
+
+  .thumbnail .title {
+    font-size: 14px;
+  }
+
+  .thumbnail .subtitle {
+    font-size: 11px;
+  }
+}
