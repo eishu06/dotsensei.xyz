@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | .SENSEI</title>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3G4VZ4G3LH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3G4VZ4G3LH');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NBD6345S');
+  </script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="about-page">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBD6345S"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- Coupon Ticker -->
+  <div class="coupon-carousel">
+    <div class="coupon-track">
+      <span class="msg red">🎉 Use Code <strong>SENSEI50</strong> for 50% Off! 🎉</span>
+      <span class="msg green">🚀 Limited Time Offer – Grab It Now with <strong>SENSEI50</strong> 🚀</span>
+      <span class="msg blue">🔥 Save Big Today: Apply Coupon <strong>SENSEI50</strong> at Checkout 🔥</span>
+      <span class="msg purple">⭐ Unlock Exclusive Perks with <strong>SENSEI50</strong> ⭐</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo">.SENSEI</a>
+    <div class="menu-toggle">&#9776;</div>
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="why.html">Why .Sensei</a></li>
+        <li><a href="faq.html">FAQ's</a></li>
+        <li><a href="posts/blog.html">Blog</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section>
+      <h1>About .SENSEI</h1>
+      <p>
+        .SENSEI is a Web 3 top-level domain that celebrates mastery, knowledge, and expertise across industries. 
+        Our platform empowers individuals, professionals, and organizations to showcase authority, guidance, and leadership in their domain. 
+      </p>
+      <p>
+        By registering a .SENSEI domain, you establish a distinctive online identity that communicates credibility and skill to your audience.
+      </p>
+    </section>
+
+    <section>
+      <h2>Our Mission</h2>
+      <p>
+        Our mission is to create a digital ecosystem where experts, mentors, and innovators can highlight their work, share knowledge, and connect with communities seeking guidance.
+        We aim to give each user a platform that stands out, reflects mastery, and builds trust.
+      </p>
+    </section>
+
+    <section>
+      <h2>Why Choose .SENSEI?</h2>
+      <ul>
+        <li>Stand out with a unique, authoritative domain name.</li>
+        <li>Showcase your expertise and professionalism.</li>
+        <li>Build trust and credibility in your industry.</li>
+        <li>Access a modern, Web 3-friendly digital identity.</li>
+      </ul>
+      <div class="cta"><a href="https://www.freename.io/discover/sensei" target="_blank">Register Your .SENSEI Domain 🚀</a></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 .SENSEI — A Web 3 Top Level Domain. Powered by Freename.io
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navMenu = document.querySelector('nav ul');
+      if(menuToggle && navMenu) {
+        menuToggle.addEventListener('click', () => {
+          navMenu.classList.toggle('active');
+        });
+      }
+    });
+
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if(window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
 
