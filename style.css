@@ -135,13 +135,6 @@ footer {
 }
 
 /* Thumbnail section */
-.domain-thumbnails h1 {
-  margin-bottom: 25px;
-  font-size: 28px;
-  color: #000;
-  position: relative;
-  z-index: 1;
-}
 
 .domain-thumbnails {
   padding: 50px 20px;
@@ -159,9 +152,13 @@ footer {
   z-index: -1;
 }
 
-
-
-
+.domain-thumbnails h1 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #000;
+  position: relative;
+  z-index: 1;
+}
 
 
 .thumbnails-container {
