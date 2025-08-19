@@ -51,9 +51,6 @@
   <header>
     <a href="index.html" class="logo">.SENSEI</a>
 
-    <!-- Hamburger Menu for mobile -->
-    <div class="menu-toggle">&#9776;</div>
-
     <nav>
       <ul>
         <li><a href="about.html">About</a></li>
@@ -99,27 +96,17 @@
   </footer>
 
   <!-- JavaScript for header scroll effect and menu toggle -->
-  <script>
-    // Scroll effect for header
-    window.addEventListener('scroll', function() {
-      const header = document.querySelector('header');
-      if(window.scrollY > 50) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    });
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('nav ul');
 
-    // Hamburger menu toggle
-    document.addEventListener('DOMContentLoaded', () => {
-      const menuToggle = document.querySelector('.menu-toggle');
-      const navMenu = document.querySelector('nav ul');
-      if(menuToggle && navMenu) {
-        menuToggle.addEventListener('click', () => {
-          navMenu.classList.toggle('active');
-        });
-      }
+  if(menuToggle && navMenu) {
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
     });
-  </script>
+  }
+});
+</script>
 </body>
 </html>
