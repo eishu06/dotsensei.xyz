@@ -219,7 +219,7 @@ body {
   word-break: normal;
 
   /* Add background image */
-  background-image: url('thumbnail-bg.jpg'); /* replace with your image path */
+  background-image: url('images/thumbnail-bg.jpg'); /* replace with your image path */
   background-size: cover;       /* make sure the image covers the whole thumbnail */
   background-position: center;  /* center the image */
   background-repeat: no-repeat;
