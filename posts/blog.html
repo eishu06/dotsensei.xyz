@@ -4,8 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog | .SENSEI</title>
+  
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Blog-specific Styles -->
+  <link rel="stylesheet" href="blog.css">
 
-  <!-- Google Analytics -->
+  <!-- Google Analytics (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3G4VZ4G3LH"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -15,62 +21,11 @@
   </script>
 
   <!-- Google Tag Manager -->
-  <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NBD6345S');
-  </script>
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="blog.css">
-
-  <style>
-    .blog-container {
-      max-width: 1000px;
-      margin: 50px auto;
-      padding: 0 20px;
-    }
-    .blog-post {
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 25px;
-      background: #fff;
-      transition: box-shadow 0.3s;
-    }
-    .blog-post:hover {
-      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-    }
-    .blog-post h2 {
-      margin-top: 0;
-      color: #38bdf8;
-    }
-    .blog-post .date {
-      font-size: 0.9rem;
-      color: #777;
-      margin-bottom: 10px;
-    }
-    .blog-post p {
-      line-height: 1.6;
-      color: #111;
-    }
-    .read-more {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 8px 15px;
-      background: #38bdf8;
-      color: #fff;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    .read-more:hover {
-      background: #0479d9;
-    }
-  </style>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NBD6345S');</script>
 </head>
 <body class="blog-page">
 
@@ -88,10 +43,13 @@
     </div>
   </div>
 
-  <!-- Header -->
+  <!-- Header / Navigation -->
   <header>
     <a href="index.html" class="logo">.SENSEI</a>
+
+    <!-- Hamburger Menu for Mobile -->
     <div class="menu-toggle">&#9776;</div>
+
     <nav>
       <ul>
         <li><a href="about.html">About</a></li>
@@ -104,56 +62,51 @@
   </header>
 
   <!-- Main Blog Section -->
-  <main>
-    <div class="blog-container">
-      <h1>Latest Articles on .SENSEI</h1>
+  <main class="blog-main">
+    <h1>Our Latest Insights</h1>
+    <p>Explore expert articles, tutorials, and tips on domains, Web 3, blockchain, AI, and more!</p>
 
-      <div class="blog-post">
-        <div class="date">August 19, 2025</div>
-        <h2>Top 5 Reasons to Buy a .SENSEI Domain</h2>
-        <p>Discover how a .SENSEI domain can elevate your online presence, showcase your expertise, and build trust with your audience.</p>
-        <a href="#" class="read-more">Read More</a>
-      </div>
+    <section class="blog-list">
+      <!-- Blog Post Example -->
+      <article class="blog-post">
+        <h2>Understanding the .SENSEI TLD</h2>
+        <p class="date">August 19, 2025</p>
+        <p>The .SENSEI top-level domain is designed for experts, educators, and professionals who want to showcase mastery in their field. Learn why it stands out in the Web 3 ecosystem.</p>
+        <a href="posts/understanding-sensei.html" class="read-more">Read More →</a>
+      </article>
 
-      <div class="blog-post">
-        <div class="date">August 15, 2025</div>
-        <h2>How .SENSEI Supports Branding for Professionals</h2>
-        <p>Learn how a .SENSEI domain can help mentors, experts, and innovators differentiate their brand in the digital space.</p>
-        <a href="#" class="read-more">Read More</a>
-      </div>
+      <article class="blog-post">
+        <h2>Top AI Domains You Should Consider</h2>
+        <p class="date">August 10, 2025</p>
+        <p>Discover the most promising AI-related domains on .SENSEI and how to secure them for your brand or project.</p>
+        <a href="posts/top-ai-domains.html" class="read-more">Read More →</a>
+      </article>
 
-      <div class="blog-post">
-        <div class="date">August 10, 2025</div>
-        <h2>The Rise of Specialized TLDs: Why .SENSEI Matters</h2>
-        <p>Explore the trend of niche top-level domains and why .SENSEI is an excellent choice for professionals and communities.</p>
-        <a href="#" class="read-more">Read More</a>
-      </div>
-    </div>
+      <article class="blog-post">
+        <h2>How .SENSEI Supports Branding in Web 3</h2>
+        <p class="date">August 5, 2025</p>
+        <p>Learn how choosing a .SENSEI domain can help you establish authority, build credibility, and stand out in the decentralized web.</p>
+        <a href="posts/branding-web3.html" class="read-more">Read More →</a>
+      </article>
+    </section>
   </main>
 
   <!-- Footer -->
   <footer>
-    © 2025 .SENSEI — A Web 3 Top Level Domain. Powered by Freename.io
+    © 2025 .sensei — A Web 3 Top Level Domain. Powered by Freename.io
   </footer>
 
   <!-- Scripts -->
   <script>
+    // Mobile menu toggle
     document.addEventListener('DOMContentLoaded', () => {
       const menuToggle = document.querySelector('.menu-toggle');
       const navMenu = document.querySelector('nav ul');
+
       if(menuToggle && navMenu) {
         menuToggle.addEventListener('click', () => {
           navMenu.classList.toggle('active');
         });
-      }
-    });
-
-    window.addEventListener('scroll', function() {
-      const header = document.querySelector('header');
-      if(window.scrollY > 50) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
       }
     });
   </script>
