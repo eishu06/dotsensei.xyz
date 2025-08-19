@@ -223,6 +223,21 @@ footer {
   .thumbnail .subtitle { font-size: 11px; }
   .thumbnail .price { font-size: 12px; }
 
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;  /* show only on small screens */
+  }
+
+  header nav {
+    margin-left: 0; /* reset if needed */
+  }
+
+  header .logo {
+    margin-left: 60px; /* push logo right so it doesn’t overlap toggle */
+  }
+}
+
+  
   nav ul {
     flex-direction: column;
     gap: 10px;
