@@ -234,11 +234,23 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  text-decoration: none; /* remove underline for links */
   transition: transform 0.2s, box-shadow 0.2s;
   word-break: break-word;
 }
 
+/* Hover effect */
 .thumbnail:hover {
   transform: translateY(-3px);
   box-shadow: 0 5px 12px rgba(0,0,0,0.2);
 }
+
+/* Responsive for mobile */
+@media (max-width: 500px) {
+  .thumbnail {
+    width: 80px;
+    height: 50px;
+    font-size: 12px;
+  }
+}
+
