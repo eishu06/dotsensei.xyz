@@ -38,19 +38,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <span class="msg purple">⭐ Unlock Exclusive Perks with <strong>SENSEI50</strong> ⭐</span>
   </div>
 </div>
-  <header>
-  <nav>
+ <header>
   <a href="index.html" class="logo">.SENSEI</a>
-  <ul>
-    <li><a href="about.html">About</a></li>
-    <li><a href="why.html">Why .Sensei</a></li>
-    <li><a href="faq.html">FAQ's</a></li>
-    <li><a href="posts/blog.html">Blog</a></li>
-    <li><a href="contactus.html">Contact Us</a></li>
-  </ul>
-</nav>
 
-  </header>
+  <!-- Hamburger Menu for mobile -->
+  <div class="menu-toggle">&#9776;</div>
+
+  <nav>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="why.html">Why .Sensei</a></li>
+      <li><a href="faq.html">FAQ's</a></li>
+      <li><a href="posts/blog.html">Blog</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
 
   <main>
     <h1>Why Choose .SENSEI?</h1>
@@ -86,12 +90,17 @@ window.addEventListener('scroll', function() {
 });
 </script>
 <script>
+document.addEventListener('DOMContentLoaded', () => {
   const menuToggle = document.querySelector('.menu-toggle');
   const navMenu = document.querySelector('nav ul');
 
-  menuToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-  });
+  if(menuToggle && navMenu) {
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  }
+});
 </script>
+
 </body>
 </html>
