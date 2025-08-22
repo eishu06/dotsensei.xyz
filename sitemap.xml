@@ -1,40 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Home -->
   <url>
     <loc>https://dotsensei.xyz/</loc>
-    <lastmod>2025-08-17T10:01:58+00:00</lastmod>
-    <priority>1.00</priority>
+    <priority>1.0</priority>
   </url>
 
-  <url>
-    <loc>https://dotsensei.xyz/index.html</loc>
-    <lastmod>2025-08-17T10:01:58+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-
+  <!-- About -->
   <url>
     <loc>https://dotsensei.xyz/about.html</loc>
-    <lastmod>2025-08-17T10:01:58+00:00</lastmod>
-    <priority>0.80</priority>
+    <priority>0.8</priority>
   </url>
 
+  <!-- Why .Sensei -->
   <url>
     <loc>https://dotsensei.xyz/why.html</loc>
-    <lastmod>2025-08-17T10:01:58+00:00</lastmod>
-    <priority>0.80</priority>
+    <priority>0.8</priority>
   </url>
 
+  <!-- FAQ -->
   <url>
     <loc>https://dotsensei.xyz/faq.html</loc>
-    <lastmod>2025-08-17T10:01:58+00:00</lastmod>
-    <priority>0.80</priority>
+    <priority>0.7</priority>
   </url>
 
+  <!-- Contact Us -->
   <url>
     <loc>https://dotsensei.xyz/contactus.html</loc>
-    <lastmod>2025-08-17T10:01:58+00:00</lastmod>
-    <priority>0.80</priority>
+    <priority>0.7</priority>
   </url>
+
+  <!-- External page (Freename.io) - not included in sitemap because it's outside your domain -->
 
 </urlset>
