@@ -325,3 +325,16 @@ section {
         style="border:none;" 
         allowfullscreen
         loading="lazy"></iframe>
+
+/* Reduce space below header */
+header {
+  padding: 10px 20px; /* smaller padding */
+}
+
+/* Remove big gap before first section */
+main section:first-of-type,
+.hero, /* if you use .hero */
+.about {
+  margin-top: 0;
+  padding-top: 20px; /* small breathing space */
+}
