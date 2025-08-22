@@ -1,4 +1,8 @@
+# robots.txt for dotsensei.xyz
+
+# Allow all search engines to crawl everything
 User-agent: *
 Allow: /
 
+# Sitemap location
 Sitemap: https://dotsensei.xyz/sitemap.xml
