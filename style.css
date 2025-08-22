@@ -16,7 +16,40 @@ body {
   background-attachment: fixed;
 }
 
+/* ===== Header ===== */
+header {
+  background: rgba(255,255,255,0.85); /* light semi-transparent header */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+header .logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #38bdf8; /* keep logo colorful */
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #111; /* dark links for visibility */
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #38bdf8;
+}
 
 /* ===== Main Section ===== */
 main {
