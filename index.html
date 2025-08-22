@@ -61,34 +61,19 @@
   </div>
 
   <!-- Header -->
-<header>
-  <div class="header-container">
+  <header>
     <a href="index.html" class="logo">.SENSEI</a>
-    <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
-    <nav class="nav-menu">
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="why.html">Why .Sensei</a></li>
-        <li><a href="usecases.html">Use Cases</a></li>
-        <li><a href="faq.html">FAQ's</a></li>
-        <li><a href="contactus.html">Contact Us</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<!-- Header Script -->
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navMenu = document.querySelector('.nav-menu');
-
-  menuToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-    menuToggle.classList.toggle('active'); // toggle ☰ ↔ ✖
-  });
-});
-</script>
+    <div class="menu-toggle">&#9776;</div>
+   <nav>
+  <ul>
+    <li><a href="about.html">About</a></li>
+    <li><a href="why.html">Why .Sensei</a></li>
+    <li><a href="usecases.html">Use Cases</a></li>
+    <li><a href="faq.html">FAQ's</a></li>
+    <li><a href="contactus.html">Contact Us</a></li>
+  </ul>
+</nav>
+  </header>
 
   <!-- Main -->
   <main>
@@ -215,4 +200,3 @@ document.addEventListener('DOMContentLoaded', () => {
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
-
