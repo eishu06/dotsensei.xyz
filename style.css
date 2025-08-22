@@ -336,5 +336,5 @@ main section:first-of-type,
 .hero, /* if you use .hero */
 .about {
   margin-top: 0;
-  padding-top: 20px; /* small breathing space */
+  padding-top: 5px; /* small breathing space */
 }
