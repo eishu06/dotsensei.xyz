@@ -319,3 +319,19 @@ section {
   .usecases-grid { grid-template-columns: 1fr; }
 }
 
+/* Responsive iframe container */
+.iframe-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 30px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.iframe-container iframe {
+  width: 100%;
+  height: 700px;
+  border: none;
+}
