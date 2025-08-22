@@ -41,25 +41,27 @@ header .logo {
   text-decoration: none;
 }
 
-/* Navigation */
+
+/* ===== Navigation Menu ===== */
 .nav-menu ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+  list-style: none;   /* removes bullets */
   margin: 0;
   padding: 0;
+  display: flex;
+  gap: 20px;
 }
 
 .nav-menu a {
   color: #111;
   text-decoration: none;
   font-weight: 500;
-  transition: 0.3s;
+  transition: color 0.3s ease;
 }
 
 .nav-menu a:hover {
   color: #38bdf8;
 }
+
 
 /* Hamburger Button */
 .menu-toggle {
