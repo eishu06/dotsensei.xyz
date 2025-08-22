@@ -232,3 +232,8 @@ footer {
     font-size: 14px;
   }
 }
+/* Equal gaps between all sections */
+section {
+  margin-bottom: 60px; /* you can adjust 60px to 40px or 80px depending on how much space you want */
+}
+
