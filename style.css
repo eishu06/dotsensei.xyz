@@ -237,3 +237,85 @@ section {
   margin-bottom: 60px; /* you can adjust 60px to 40px or 80px depending on how much space you want */
 }
 
+/* Use Cases */
+#use-cases h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#use-cases p {
+  max-width: 900px;
+  margin: 0 auto 24px;
+  line-height: 1.6;
+}
+
+.usecases-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.usecase-card {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.usecase-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.usecase-card .icon {
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.usecase-card h2 {
+  font-size: 1.1rem;
+  margin: 6px 0 8px;
+}
+
+.usecase-card p {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.usecase-card .bullets {
+  margin: 0 0 10px 18px;
+  padding: 0;
+}
+
+.usecase-card .bullets li {
+  margin: 6px 0;
+}
+
+.usecase-card .example {
+  background: #f7f7f9;
+  border: 1px dashed rgba(0,0,0,0.12);
+  border-radius: 10px;
+  padding: 10px 12px;
+  display: inline-block;
+}
+
+.usecase-card .example .label {
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .usecases-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .usecases-grid { grid-template-columns: 1fr; }
+}
+
